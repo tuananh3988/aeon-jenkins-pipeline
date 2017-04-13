@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Preparation') {
       steps {
-        echo 'Preparation'
+        echo 'Preparation 123'
       }
     }
     stage('Backup') {
