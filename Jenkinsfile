@@ -5,7 +5,8 @@ pipeline {
       steps {
         echo 'Preparation 123'
         sh '''cd /var/www/html
-whoami'''
+git diff > /home/jenkins/abc.diff
+grep -rnw '/home/jenkins/abc.diff' -e "??"'''
       }
     }
     stage('Backup') {
